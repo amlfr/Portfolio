@@ -1,0 +1,24 @@
+.about {
+    height: 90vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 500px;
+    padding: 10% 0 0 0;
+    scroll-snap-align: center;
+}
+
+.bio {
+    width: 20vw;
+
+    &__text {
+        margin: 15px 0;
+    }
+}
+
+.header {
+    border-bottom: 2px solid white;
+    margin: 0 0 30px 0;
+    display: inline-block;
+}

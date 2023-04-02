@@ -1,0 +1,11 @@
+.main {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 90vh;
+    scrollbar-width: none;
+    overscroll-behavior: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

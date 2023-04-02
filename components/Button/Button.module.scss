@@ -1,0 +1,48 @@
+.wrapper {
+    background-color: black;
+    height: 65px;
+    width: 200px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 5px black;
+    border: 2px solid white;
+    transition-duration: 0.3s;
+    animation-name: AppearIn;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+
+    &:hover {
+        transition-duration: 0.3s;
+        background-color: var(--color-primary);
+        box-shadow: 0 0 10px white;
+        border: 2px solid black;
+        color: black;
+    }
+}
+
+.link {
+    height: 100%;
+    width: 100%;
+    display: block;
+    transition-duration: 0.3s;
+
+    &:hover {
+        transition-duration: 0.3s;
+        filter: invert(100%);
+    }
+}
+
+.text {
+    text-shadow: none;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 65px;
+}
+
+@keyframes AppearIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,101 @@
+.hello {
+    height: 90vh;
+    background-color: var(--color-primary);
+    /* background-size: 160px 160px;
+    background-image: linear-gradient(
+            to right,
+            rgb(148, 147, 147) 2px,
+            transparent 1px
+        ),
+        linear-gradient(to bottom, rgb(148, 147, 147) 2px, transparent 1px); */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+    background-position: 0% 60.55%;
+    scroll-snap-align: start;
+    scroll-margin: 0;
+
+    &__wrapper {
+        text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+            1px 1px 0 white, 0 0 5px black;
+        transition-duration: 0.3s;
+        animation-name: AppearIn;
+        animation-duration: 500ms;
+        animation-timing-function: linear;
+    }
+
+    &__text {
+        font-size: 2rem;
+        color: black;
+
+        &--scroll {
+            font-size: 1rem;
+            color: black;
+            width: 50px;
+            text-align: center;
+        }
+    }
+
+    &__title {
+        font-size: 3.5rem;
+        color: black;
+    }
+
+    &__wrapperPhoto {
+        background-color: black;
+        width: 400px;
+        height: 400px;
+        transform: rotate(45deg);
+        box-shadow: 0 0 8px black;
+        outline: 2px solid white;
+        transition-duration: 0.3s;
+        animation-name: AppearIn;
+        animation-duration: 500ms;
+        animation-timing-function: linear;
+    }
+
+    &__photo {
+        width: 400px;
+        height: 400px;
+        background-color: black;
+        border-radius: 50%;
+        overflow: hidden;
+        transform: rotate(-45deg);
+    }
+
+    &__wrapperScroll {
+        position: absolute;
+        inset: 85% 0 0 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__arrow {
+        height: 25px;
+        width: 25px;
+        overflow: hidden;
+        animation: 0.7s alternate linear infinite MoveDown;
+    }
+}
+
+@keyframes AppearIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes MoveDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
