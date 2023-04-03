@@ -1,7 +1,7 @@
 import styles from "./Social.module.scss";
 import Image from "next/image";
-import githubSvg from "../../../public/svg/github-mark.svg";
-import linkedinSvg from "../../../public/svg/linkedin-svgrepo-com.svg";
+import githubSvg from "../../public/svg/github-mark.svg";
+import linkedinSvg from "../../public/svg/linkedin-svgrepo-com.svg";
 
 const Social = () => {
     return (

@@ -5,17 +5,19 @@ const About = () => {
     const skillsArray = [
         "Javascript",
         "React",
+        "Next.js",
         "Sass",
         "Express",
-        "Node",
+        "Node.js",
         "MongoDB",
-        "HTML5",
+        "HTML",
         "CSS",
     ];
 
+    // Iterate over the array to create every tags
     const createTags = skillsArray.map((skill: string, index: number) => (
-        <div key={index}>
-            <p>{skill}</p>
+        <div key={index} className={styles.skill__tag}>
+            <p className={styles.skill__text}>{skill}</p>
         </div>
     ));
 
@@ -33,9 +35,9 @@ const About = () => {
                 </p>
                 <p className={styles.bio__text}>
                     Grace à une bonne maîtrise de l&#39;outil informatique et un
-                    niveau C1 en anglais, je suis capable d&#39;être efficace et
-                    autonome dans mon processus d&#39;apprentissage ainsi que
-                    mes projets personnels et professionnels.
+                    très bon niveau en anglais, je suis capable d&#39;être
+                    efficace et autonome dans mon processus d&#39;apprentissage
+                    ainsi que mes projets personnels et professionnels.
                 </p>
                 <p className={styles.bio__text}>
                     De nature calme et possédant un bon esprit logique, je

@@ -1,6 +1,9 @@
 import Head from "next/head";
-import styles from "./Home.module.scss";
+import styles from "./Page.module.scss";
 import Home from "../components/Home/index";
+import About from "../components/About/index";
+import Project from "../components/Project";
+import Social from "../components/Social";
 import Layout from "../components/Layout/index";
 import type { ReactElement } from "react";
 import type { NextPageWithLayout } from "./_app";
@@ -24,10 +27,12 @@ const Page: NextPageWithLayout = () => {
                     name="viewport"
                     content="width=device-width, initial-scale=1"
                 />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" type="image/x-icon" href="/favicon.ico" />
             </Head>
-
             <Home />
+            <About />
+            <Project />
+            <Social />
         </>
     );
 };

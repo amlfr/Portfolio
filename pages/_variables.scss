@@ -1,0 +1,20 @@
+$color-primary: #f7df1e;
+
+$breakpoints: (
+    "mobile": 767px,
+    "tablet": 998px,
+);
+
+// Responsive layout mixins
+
+@mixin tablet {
+    @media screen and (max-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}

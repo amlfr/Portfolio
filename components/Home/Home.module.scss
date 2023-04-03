@@ -1,6 +1,6 @@
-.hello {
+.home {
     height: 90vh;
-    background-color: var(--color-primary);
+    background-color: $color-primary;
     /* background-size: 160px 160px;
     background-image: linear-gradient(
             to right,
@@ -16,6 +16,10 @@
     background-position: 0% 60.55%;
     scroll-snap-align: start;
     scroll-margin: 0;
+
+    @include tablet {
+        background-color: aqua;
+    }
 
     &__wrapper {
         text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
@@ -66,8 +70,8 @@
     }
 
     &__wrapperScroll {
-        position: absolute;
-        inset: 85% 0 0 90%;
+        position: relative;
+        inset: 40% 0 0 3%;
         display: flex;
         align-items: center;
         justify-content: center;
