@@ -1,0 +1,16 @@
+.contact {
+    height: 90vh;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.form {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}

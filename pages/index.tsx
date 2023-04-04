@@ -4,6 +4,7 @@ import Home from "../components/Home/index";
 import About from "../components/About/index";
 import Project from "../components/Project";
 import Social from "../components/Social";
+import Contact from "../components/Contact";
 import Layout from "../components/Layout/index";
 import type { ReactElement } from "react";
 import type { NextPageWithLayout } from "./_app";
@@ -32,6 +33,7 @@ const Page: NextPageWithLayout = () => {
             <Home />
             <About />
             <Project />
+            <Contact />
             <Social />
         </>
     );
