@@ -21,6 +21,12 @@ main {
     height: 90vh;
     overflow: scroll;
     scroll-snap-type: y mandatory;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+
+    //Hide scroll bar on all browsers
+    -ms-overflow-style: none; //IE and Edge
+    scrollbar-width: none; //Firfox
+
+    &::-webkit-scrollbar {
+        display: none; //Chrome,Safar,Opera
+    }
 }
