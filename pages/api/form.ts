@@ -21,7 +21,7 @@ export default async function handler(
                 const client = await clientPromise;
                 const collection = client.db("test").collection("messages");
 
-                return await collection.insertOne({
+                collection.insertOne({
                     fullname: body.fullname,
                     email: body.email,
                     subject: body.subject,
