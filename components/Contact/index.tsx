@@ -29,7 +29,7 @@ const Contact = () => {
 
         const result = await response.json();
         console.log(result);
-        alert(`Is this your full name: ${result.response}`);
+        alert(`${result.response}`);
     };
     return (
         <section className={styles.contact}>
