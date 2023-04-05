@@ -21,7 +21,7 @@ export default async function handler(
                 const client = await clientPromise;
                 const collection = client.db("test").collection("messages");
 
-                collection.insertOne({
+                return await collection.insertOne({
                     fullname: body.fullname,
                     email: body.email,
                     subject: body.subject,
@@ -29,7 +29,7 @@ export default async function handler(
                 });
 
                 //Sends back success code
-                return res.status(200).json({
+                res.status(200).json({
                     response: `Votre message a bien été transmis! Merci beaucoup`,
                 });
             } catch (error: any) {
