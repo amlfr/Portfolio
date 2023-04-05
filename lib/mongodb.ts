@@ -1,9 +1,8 @@
 import { MongoClient } from "mongodb";
 
-const url = process.env.MONGODB_URL as string;
-const options = {};
+const uri = process.env.MONGODB_URI as string;
 
-let client = new MongoClient(url, options);
+let client = new MongoClient(uri);
 let clientPromise: Promise<any> = client.connect();
 
 export default clientPromise;
