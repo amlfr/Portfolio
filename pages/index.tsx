@@ -29,6 +29,10 @@ const Page: NextPageWithLayout = () => {
                     content="width=device-width, initial-scale=1"
                 />
                 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+                <meta
+                    name="google-site-verification"
+                    content="v-Fz2Old9Bm3f8HV1IAlyr1cFJ9kNB7pgM9-63OrAVQ"
+                />
             </Head>
             <Home />
             <About />
