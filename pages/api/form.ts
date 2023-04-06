@@ -15,7 +15,9 @@ export default async function handler(
         //Checking for all fields
         if (!body.fullname || !body.email || !body.subject || !body.message) {
             // Sends a HTTP bad request error code
-            return res.status(400).json({ response: "One empty field !" });
+            return res
+                .status(400)
+                .json({ response: "Veuillez remplir tout les champs" });
         } else {
             try {
                 const client = await clientPromise;
@@ -37,6 +39,6 @@ export default async function handler(
             }
         }
     } else {
-        return res.status(405).json({ response: "Méthode non autorisée" });
+        return res.status(405).json({ response: "Méthode http non autorisée" });
     }
 }

@@ -28,6 +28,10 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
                     html {
                         font-family: ${syne.style.fontFamily};
                     }
+
+                    input {
+                        font-family: ${syne.style.fontFamily};
+                    }
                 `}
             </style>
 

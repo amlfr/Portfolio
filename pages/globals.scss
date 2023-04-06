@@ -9,7 +9,6 @@
     box-sizing: border-box;
     color: white;
     scroll-behavior: smooth;
-    font-family: "Syne", sans-serif;
 }
 
 a {
@@ -29,4 +28,8 @@ main {
     &::-webkit-scrollbar {
         display: none; //Chrome,Safar,Opera
     }
+}
+
+.visible {
+    display: block !important;
 }

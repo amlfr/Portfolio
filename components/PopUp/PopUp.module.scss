@@ -3,6 +3,8 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
+    inset: 0;
+    display: none;
 }
 
 .popup {
@@ -10,4 +12,9 @@
     width: 45vw;
     height: 45vh;
     background-color: aqua;
+    inset: 0;
+}
+
+.visible {
+    display: block;
 }

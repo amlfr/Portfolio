@@ -12,17 +12,17 @@
         color: black;
         font-size: 3rem;
         text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
-            1px 1px 0 white, 0 0 8px black;
+            1px 1px 0 white, 0 0 5px black;
 
         &:before {
             content: "";
             display: block;
             background-color: black;
             width: 100%;
-            height: 5%;
+            height: 2px;
             position: relative;
-            border: 2px solid white;
-            box-shadow: 0 0 3px black;
+            border: 1px solid white;
+            box-shadow: 0 0 2px black;
             top: 110%;
         }
     }
