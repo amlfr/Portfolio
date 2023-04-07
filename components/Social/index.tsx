@@ -10,14 +10,14 @@ const Social = () => {
                 <Image
                     src={githubSvg}
                     alt="github logo with link"
-                    className={styles.socialLink}
+                    className={styles.link}
                 />
             </a>
             <a href="https://www.linkedin.com/in/amlfr/" target="blank">
                 <Image
                     src={linkedinSvg}
                     alt="linkedin logo with link"
-                    className={styles.socialLink}
+                    className={styles.llink}
                 />
             </a>
         </div>

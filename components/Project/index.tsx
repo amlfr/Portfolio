@@ -52,11 +52,11 @@ const createTags = ProjectList.map((project: ProjectType, index: number) => (
             <Image
                 src={project.picture}
                 alt={`Prise d'écran du projet ${project.name}`}
-                className={styles.card__picture}
+                className={styles.picture}
                 width={1920}
                 height={1080}
             />
-            <h3 className={styles.card__title}>{project.name}</h3>
+            <h3 className={styles.cardHeader}>{project.name}</h3>
         </div>
         <PopUp id={project.name} />
     </div>
@@ -64,8 +64,8 @@ const createTags = ProjectList.map((project: ProjectType, index: number) => (
 
 const Project = () => {
     return (
-        <section className={styles.project} id="project">
-            <h2 className={styles.project__title}>Projets</h2>
+        <section className={styles.section} id="project">
+            <h2 className={styles.header}>Projets</h2>
             <div className={styles.container}>{createTags}</div>
         </section>
     );

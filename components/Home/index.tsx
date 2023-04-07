@@ -6,27 +6,27 @@ import Button from "../Button/index";
 
 const Home = () => {
     return (
-        <section className={styles.home}>
-            <div className={styles.home__wrapper}>
-                <h2 className={styles.home__title}>
+        <section className={styles.section}>
+            <div className={styles.textWrapper}>
+                <h1 className={styles.header}>
                     ANTONY <br /> MARTINEZ--LALENEC
-                </h2>
-                <p className={styles.home__text}>développeur web front-end</p>
+                </h1>
+                <p className={styles.text}>développeur web front-end</p>
                 <Button text="Projets" target="#project" />
             </div>
-            <div className={styles.home__wrapperPhoto}>
+            <div className={styles.photoWrapper}>
                 <Image
                     src={portfolioPhoto}
                     alt="Photo d'Antony Martinez--Lalenec"
-                    className={styles.home__photo}
+                    className={styles.photo}
                 />
             </div>
-            <div className={styles.home__wrapperScroll}>
-                <p className={styles["home__text--scroll"]}>Scroll down</p>
+            <div className={styles.scrollWrapper}>
+                <p className={styles.scrollText}>Scroll down</p>
                 <Image
                     src={arrowSvg}
                     alt="Arrow pointed down, please scroll"
-                    className={styles.home__arrow}
+                    className={styles.arrow}
                 />
             </div>
         </section>
