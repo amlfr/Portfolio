@@ -31,10 +31,10 @@ const Contact = () => {
         alert(`${result.response}`);
     };
     return (
-        <section className={styles.contact}>
-            <div className={styles.contact__wrapper}>
-                <h2 className={styles.contact__title}>Contact</h2>
-                <p className={styles.contact__text}>
+        <section className={styles.section}>
+            <div className={styles.wrapper}>
+                <h2 className={styles.header}>Contact</h2>
+                <p className={styles.text}>
                     N&#39;hésitez pas a me laissez un message pour toute offre
                     d&#39;emploi.
                 </p>
@@ -42,27 +42,27 @@ const Contact = () => {
                     <input
                         type="text"
                         name="fullname"
-                        className={styles.form__input}
+                        className={styles.input}
                         placeholder="Nom"
                     />
                     <input
                         type="text"
                         name="email"
-                        className={styles.form__input}
+                        className={styles.input}
                         placeholder="Adresse email"
                     />
                     <input
                         type="text"
                         name="subject"
-                        className={styles.form__input}
+                        className={styles.input}
                         placeholder="Sujet"
                     />
                     <textarea
                         name="message"
-                        className={`${styles.form__input} ${styles.form__message}`}
+                        className={`${styles.input} ${styles.message}`}
                         placeholder="Votre message..."
                     />
-                    <button type="submit" className={styles.form__submit}>
+                    <button type="submit" className={styles.button}>
                         Envoyez votre message
                     </button>
                 </form>

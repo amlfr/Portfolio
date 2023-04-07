@@ -2,22 +2,22 @@ import styles from "./Header.module.scss";
 
 const Header = () => {
     return (
-        <header className={styles.header}>
-            <h1 className={styles.header__title}>AMLFR</h1>
-            <nav className={styles.navbar}>
-                <ul className={styles.navbar__list}>
-                    <li className={styles.navbar__item}>
-                        <a href="#home" className={styles.navbar__link}>
+        <header className={styles.container}>
+            <p className={styles.header}>AMLFR</p>
+            <nav>
+                <ul className={styles.list}>
+                    <li className={styles.item}>
+                        <a href="#home" className={styles.link}>
                             A propos
                         </a>
                     </li>
-                    <li className={styles.navbar__item}>
-                        <a href="#project" className={styles.navbar__link}>
+                    <li className={styles.item}>
+                        <a href="#project" className={styles.link}>
                             Projets
                         </a>
                     </li>
-                    <li className={styles.navbar__item}>
-                        <a href="#" className={styles.navbar__link}>
+                    <li className={styles.item}>
+                        <a href="#" className={styles.link}>
                             Contact
                         </a>
                     </li>

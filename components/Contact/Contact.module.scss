@@ -1,4 +1,4 @@
-.contact {
+.section {
     height: 90vh;
     scroll-snap-align: center;
     display: flex;
@@ -6,23 +6,23 @@
     justify-content: center;
     align-items: flex-start;
     background-color: black;
+}
 
-    &__wrapper {
-        position: relative;
-        left: 25%;
-    }
+.wrapper {
+    position: relative;
+    left: 25%;
+}
 
-    &__title {
-        font-size: 3rem;
-        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
-            1px 1px 0 black, 0 0 2px white;
-    }
+.header {
+    font-size: 3rem;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black, 0 0 2px white;
+}
 
-    &__text {
-        font-size: 1.25rem;
-        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
-            1px 1px 0 black, 0 0 2px white;
-    }
+.text {
+    font-size: 1.25rem;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black, 0 0 2px white;
 }
 
 .form {
@@ -30,38 +30,40 @@
     flex-direction: column;
     gap: 25px;
     margin: 15px 0 0 0;
+}
 
-    &__input {
-        height: 40px;
-        background-color: rgb(122, 122, 122);
-        padding-left: 0.5rem;
-        font-size: 2rem;
-        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
-            1px 1px 0 black, 0 0 2px white;
+.input {
+    height: 40px;
+    background-color: rgb(122, 122, 122);
+    padding-left: 0.5rem;
+    font-size: 2rem;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black, 0 0 2px white;
+    color: white;
+    cursor: pointer;
+    border: 2px solid white;
+
+    &::placeholder {
+        opacity: 1;
         color: white;
-        cursor: pointer;
-
-        &::placeholder {
-            opacity: 1;
-        }
-
-        &:focus {
-            outline: 2px solid $color-primary;
-        }
     }
 
-    &__message {
-        height: 400px;
+    &:focus {
+        outline: 2px solid $color-primary;
     }
+}
 
-    &__submit {
-        color: fuchsia;
-        background-color: rgb(122, 122, 122);
-        font-size: 2rem;
-        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
-            1px 1px 0 black, 0 0 2px white;
-        color: white;
-        padding: 0.8rem 0;
-        cursor: pointer;
-    }
+.message {
+    height: 400px;
+}
+
+.button {
+    color: fuchsia;
+    background-color: rgb(122, 122, 122);
+    font-size: 2rem;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black, 0 0 2px white;
+    color: white;
+    padding: 0.8rem 0;
+    cursor: pointer;
 }

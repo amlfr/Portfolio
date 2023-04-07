@@ -1,4 +1,4 @@
-.header {
+.container {
     height: 10vh;
     background-color: black;
     display: flex;
@@ -7,46 +7,44 @@
     box-shadow: 0 5px 5px black;
     border-bottom: 2px solid white;
     /* border-bottom: 6px solid var(--color-primary); */
+}
 
-    &__title {
-        font-size: 4rem;
-        margin-left: 12rem;
-        animation-name: AppearIn, slideFromTop;
-        animation-duration: 500ms, 500ms;
-        animation-timing-function: cubic-bezier(0.35, 0, 0.25, 1);
+.myname {
+    font-size: 4rem;
+    margin-left: 12rem;
+    animation-name: AppearIn, slideFromTop;
+    animation-duration: 500ms, 500ms;
+    animation-timing-function: cubic-bezier(0.35, 0, 0.25, 1);
+}
+
+.list {
+    list-style-type: none;
+    margin-right: 12rem;
+}
+
+.item {
+    float: left;
+    font-size: 2rem;
+    text-align: center;
+    width: 160px;
+    height: 70px;
+    line-height: 70px;
+    background-color: black;
+    transition-duration: 0.3s;
+
+    &:hover {
+        transition-duration: 0.3s;
+        filter: invert(100%);
     }
 }
 
-.navbar {
-    &__list {
-        list-style-type: none;
-        margin-right: 12rem;
-    }
-
-    &__item {
-        float: left;
-        font-size: 2rem;
-        text-align: center;
-        width: 160px;
-        height: 70px;
-        line-height: 70px;
-        background-color: black;
-        transition-duration: 0.3s;
-
-        &:hover {
-            transition-duration: 0.3s;
-            filter: invert(100%);
-        }
-    }
-
-    &__link {
-        height: 100%;
-        width: 100%;
-        display: block;
-        animation-name: AppearIn, slideFromTop;
-        animation-duration: 500ms, 500ms;
-        animation-timing-function: linear, ease-out;
-    }
+.link {
+    height: 100%;
+    width: 100%;
+    display: block;
+    animation-name: AppearIn, slideFromTop;
+    animation-duration: 500ms, 500ms;
+    animation-timing-function: linear, ease-out;
 }
 
 @keyframes slideFromTop {

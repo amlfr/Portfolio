@@ -1,8 +1,8 @@
 import styles from "./PopUp.module.scss";
 
-export interface propsType {
+type propsType = {
     id: string;
-}
+};
 
 const closePopUp = (target: string) => {
     const popUp = document.querySelector("#" + target) as Element;

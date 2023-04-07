@@ -9,6 +9,7 @@
     animation-name: AppearIn;
     animation-duration: 500ms;
     animation-timing-function: linear;
+    cursor: pointer;
 
     &:hover {
         transition-duration: 0.3s;

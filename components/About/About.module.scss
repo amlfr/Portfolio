@@ -1,4 +1,4 @@
-.about {
+.section {
     height: 90vh;
     background-color: black;
     display: flex;
@@ -11,12 +11,12 @@
 
 .bio {
     width: 20vw;
+}
 
-    &__text {
-        margin: 15px 0;
-        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
-            1px 1px 0 black, 0 0 3px white;
-    }
+.text {
+    margin: 15px 0;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black, 0 0 3px white;
 }
 
 .header {
@@ -34,33 +34,31 @@
         position: relative;
         border: 1px solid black;
         box-shadow: 0 0 2px white;
-        top: 120%;
+        top: 33px;
     }
 }
 
-.skill {
-    &__container {
-        display: flex;
-        gap: 50px;
-        position: relative;
-        flex-wrap: wrap;
-        top: 20px;
-        left: 0px;
-        width: 700px;
-    }
+.container {
+    display: flex;
+    gap: 50px;
+    position: relative;
+    flex-wrap: wrap;
+    top: 20px;
+    left: 0px;
+    width: 700px;
+}
 
-    &__tag {
-        border: 1px solid black;
-        border-radius: 25px;
-        padding: 0.5rem 1rem;
-        background-color: var(--color-primary);
-        box-shadow: 0 0 3px white;
-    }
+.tag {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-primary);
+    box-shadow: 0 0 3px white;
+}
 
-    &__text {
-        color: black;
-        font-size: 1.75rem;
-        text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
-            1px 1px 0 white, 0 0 3px black;
-    }
+.skillText {
+    color: black;
+    font-size: 1.75rem;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+        1px 1px 0 white, 0 0 3px black;
 }
