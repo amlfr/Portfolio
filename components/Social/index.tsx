@@ -17,7 +17,7 @@ const Social = () => {
                 <Image
                     src={linkedinSvg}
                     alt="linkedin logo with link"
-                    className={styles.llink}
+                    className={styles.link}
                 />
             </a>
         </div>

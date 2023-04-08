@@ -1,6 +1,5 @@
 :root {
     margin: 0;
-    --color-primary: #f7df1e;
 }
 
 * {
@@ -19,7 +18,7 @@ a {
 main {
     height: 90vh;
     overflow: scroll;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
 
     //Hide scroll bar on all browsers
     -ms-overflow-style: none; //IE and Edge
@@ -32,4 +31,11 @@ main {
 
 .visible {
     display: block !important;
+}
+
+p,
+h1,
+h2,
+h3 {
+    cursor: default;
 }

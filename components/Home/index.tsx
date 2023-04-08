@@ -1,6 +1,6 @@
 import styles from "./Home.module.scss";
 import Image from "next/image";
-import portfolioPhoto from "../../public/images/portfolio-photo.png";
+import portfolioPhoto from "../../public/images/portfolio_photo.png";
 import arrowSvg from "../../public/svg/down-arrow-direction-svgrepo-com.svg";
 import Button from "../Button/index";
 
