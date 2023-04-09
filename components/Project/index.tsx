@@ -21,7 +21,7 @@ const ProjectList: Array<ProjectType> = [
         liveLink: "https://amlfr.vercel.app/",
         picture: [
             "/images/portfolio_screenshot.png",
-            "/images/portfolio_screenshot.png2",
+            "/images/portfolio_screenshot2.png",
         ],
     },
     {
@@ -85,7 +85,7 @@ const createTags = ProjectList.map((project: ProjectType, index: number) => (
             name={project.name}
             source={project.source}
             description={project.description}
-            picture={project.picture[1]}
+            picture={project.picture}
         />
     </div>
 ));

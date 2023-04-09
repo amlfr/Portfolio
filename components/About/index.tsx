@@ -10,8 +10,8 @@ const About = () => {
         "Express",
         "Node.js",
         "MongoDB",
-        "HTML",
         "CSS",
+        "HTML",
     ];
 
     // Iterate over the array to create every tags

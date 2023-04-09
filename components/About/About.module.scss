@@ -3,20 +3,26 @@
     background-color: black;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     gap: 300px;
     padding: 10% 0 0 0;
     scroll-snap-align: center;
+
+    @include tablet {
+        flex-direction: column;
+        gap: 0;
+    }
 }
 
 .bio {
     width: 20vw;
-}
 
-.text {
-    margin: 15px 0;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
-        1px 1px 0 black, 0 0 3px white;
+    @include tablet {
+        width: 60vw;
+        bottom: 10%;
+        position: relative;
+        text-align: center;
+    }
 }
 
 .header {
@@ -35,6 +41,35 @@
         border: 1px solid black;
         box-shadow: 0 0 2px white;
         top: 33px;
+
+        @include tablet {
+            height: 2px;
+            top: 40px;
+        }
+    }
+
+    @include tablet {
+        font-size: 1.8rem;
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+            1px 1px 0 black, 0 0 2px white;
+    }
+}
+
+.skill {
+    @include tablet {
+        text-align: center;
+    }
+}
+
+.text {
+    margin: 15px 0;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black, 0 0 3px white;
+
+    @include tablet {
+        font-size: 1.2rem;
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+            1px 1px 0 black, 0 0 2px white;
     }
 }
 
@@ -46,6 +81,11 @@
     top: 20px;
     left: 0px;
     width: 700px;
+
+    @include tablet {
+        gap: 35px;
+        width: 70vw;
+    }
 }
 
 .tag {
@@ -54,6 +94,10 @@
     padding: 0.5rem 1rem;
     background-color: $color-primary;
     box-shadow: 0 0 3px white;
+
+    @include tablet {
+        box-shadow: 0 0 2px white;
+    }
 }
 
 .skillText {
@@ -61,4 +105,8 @@
     font-size: 1.75rem;
     text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
         1px 1px 0 white, 0 0 3px black;
+
+    @include tablet {
+        font-size: 1.5rem;
+    }
 }

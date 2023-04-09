@@ -5,34 +5,46 @@
     align-items: center;
     justify-content: center;
     gap: 300px;
-    background-position: 0% 60.55%;
     scroll-snap-align: center;
     scroll-margin: 0;
 
     @include tablet {
-        background-color: aqua;
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
 .textWrapper {
     text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
-        1px 1px 0 white, 0 0 5px black;
+        1px 1px 0 white, 0 0 4px black;
     transition-duration: 0.3s;
     animation-name: AppearIn;
     animation-duration: 500ms;
     animation-timing-function: linear;
     position: relative;
     inset: 0 0 0 190px;
+
+    @include tablet {
+        inset: 0 0 0 0px;
+    }
 }
 
 .header {
     font-size: 3.5rem;
     color: black;
+
+    @include tablet {
+        font-size: 2.75rem;
+    }
 }
 
 .text {
     font-size: 2rem;
     color: black;
+
+    @include tablet {
+        font-size: 2rem;
+    }
 }
 
 .photoWrapper {
@@ -48,6 +60,12 @@
     animation-timing-function: linear;
     position: relative;
     inset: 0 0 0 170px;
+
+    @include tablet {
+        width: 300px;
+        height: 300px;
+        inset: 55px 0 0 0;
+    }
 }
 
 .photo {
@@ -57,6 +75,11 @@
     border-radius: 50%;
     overflow: hidden;
     transform: rotate(-45deg);
+
+    @include tablet {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 .scrollWrapper {
@@ -66,6 +89,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @include tablet {
+        inset: 50px 0 0 310px;
+    }
 }
 
 .scrollText {
@@ -73,6 +100,11 @@
     color: black;
     width: 50px;
     text-align: center;
+
+    @include tablet {
+        font-size: 1.35rem;
+        width: 75px;
+    }
 }
 
 .arrow {

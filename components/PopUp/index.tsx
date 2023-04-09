@@ -1,4 +1,5 @@
 import styles from "./PopUp.module.scss";
+import Image from "next/image";
 
 interface propsType {
     id: string;
@@ -6,7 +7,7 @@ interface propsType {
     description: string;
     source: string;
     liveLink?: string;
-    picture: string;
+    picture: string[];
 }
 
 const closePopUp = (target: string) => {
@@ -22,8 +23,13 @@ const PopUp = (props: propsType) => {
             onClick={() => closePopUp(props.id)}
         >
             <div className={styles.popup}>
+                <Image
+                    src={props.picture[1]}
+                    width={1920}
+                    height={1080}
+                    alt={`Prise d'écran du projet ${props.name}`}
+                />
                 <h3>THIS IS A POP UP</h3>
-                <button onClick={() => closePopUp(props.id)}>Close</button>
             </div>
         </div>
     );
