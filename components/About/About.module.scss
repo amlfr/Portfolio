@@ -5,23 +5,26 @@
     justify-content: center;
     align-items: center;
     gap: 300px;
-    padding: 10% 0 0 0;
+
     scroll-snap-align: center;
 
     @include tablet {
         flex-direction: column;
         gap: 0;
+        padding: 10% 0 0 0;
     }
 }
 
 .bio {
     width: 20vw;
+    margin-top: -40px;
 
     @include tablet {
         width: 60vw;
-        bottom: 10%;
-        position: relative;
+        /* bottom: 10%;
+        position: relative; */
         text-align: center;
+        /* margin-top: 0; */
     }
 }
 
@@ -30,6 +33,7 @@
     display: inline-block;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
         1px 1px 0 black, 0 0 3px white;
+    font-size: 2.5rem;
 
     &:before {
         content: "";
@@ -40,7 +44,7 @@
         position: relative;
         border: 1px solid black;
         box-shadow: 0 0 2px white;
-        top: 33px;
+        top: 50px;
 
         @include tablet {
             height: 2px;
@@ -56,8 +60,10 @@
 }
 
 .skill {
+    margin-top: -240px;
     @include tablet {
         text-align: center;
+        margin-top: 0;
     }
 }
 
@@ -65,6 +71,7 @@
     margin: 15px 0;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
         1px 1px 0 black, 0 0 3px white;
+    font-size: 1.2rem;
 
     @include tablet {
         font-size: 1.2rem;

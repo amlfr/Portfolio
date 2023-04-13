@@ -2,9 +2,9 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import clientPromise from "../../lib/mongodb";
 
-type responseData = {
+interface responseData {
     response: string;
-};
+}
 
 export default async function handler(
     req: NextApiRequest,

@@ -10,26 +10,43 @@ interface propsType {
     picture: string[];
 }
 
-const closePopUp = (target: string) => {
-    const popUp = document.querySelector("#" + target) as Element;
-    popUp.classList.remove("visible");
-};
-
 const PopUp = (props: propsType) => {
+    const closePopUp = (event: React.MouseEvent<HTMLDivElement>) => {
+        event.stopPropagation();
+        console.log("up the tree");
+        const popUp = document.querySelector("#" + props.id) as Element;
+        popUp.classList.remove("visible");
+    };
+
     return (
-        <div
-            className={styles.background}
-            id={props.id}
-            onClick={() => closePopUp(props.id)}
-        >
-            <div className={styles.popup}>
+        <div className={styles.background} id={props.id} onClick={closePopUp}>
+            <div className={styles.popup} onClick={(e) => e.stopPropagation()}>
                 <Image
                     src={props.picture[1]}
                     width={1920}
                     height={1080}
                     alt={`Prise d'écran du projet ${props.name}`}
+                    className={styles.screenshot}
                 />
-                <h3>THIS IS A POP UP</h3>
+                <p className={styles.text}>{props.description}</p>
+                <div className={styles.linkWrapper}>
+                    {props.liveLink ? (
+                        <a
+                            href={props.liveLink}
+                            target="_blank"
+                            className={styles.link}
+                        >
+                            Visiter le site
+                        </a>
+                    ) : null}
+                    <a
+                        href={props.source}
+                        target="_blank"
+                        className={styles.link}
+                    >
+                        Code source
+                    </a>
+                </div>
             </div>
         </div>
     );

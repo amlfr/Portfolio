@@ -18,7 +18,6 @@ const ProjectList: Array<ProjectType> = [
         name: "Portfolio",
         description: "Site vitrine réalisé avec next.js et typescript",
         source: "https://github.com/amlfr/Portfolio",
-        liveLink: "https://amlfr.vercel.app/",
         picture: [
             "/images/portfolio_screenshot.png",
             "/images/portfolio_screenshot2.png",
@@ -56,29 +55,34 @@ const ProjectList: Array<ProjectType> = [
         liveLink: "https://amlfr.github.io/P3_ohmyfood/",
         picture: [
             "/images/ohmyfood_screenshot.png",
-            "/images/ohmyfood_screenshot.png",
+            "/images/ohmyfood_screenshot2.png",
         ],
     },
 ];
 
-//Finding the right pop up and making it vising
+//Finding the right pop up and making it visible
 const showPopUp = (target: string) => {
     const popUp = document.querySelector("#" + target) as Element;
-    console.log(popUp);
     popUp.classList.add("visible");
 };
 
 const createTags = ProjectList.map((project: ProjectType, index: number) => (
     <div key={index}>
-        <div className={styles.card} onClick={() => showPopUp(project.id)}>
+        <div className={styles.card}>
             <Image
                 src={project.picture[0]}
                 alt={`Prise d'écran du projet ${project.name}`}
                 className={styles.picture}
                 width={1920}
                 height={1080}
+                onClick={() => showPopUp(project.id)}
             />
-            <h3 className={styles.cardHeader}>{project.name}</h3>
+            <h3
+                className={styles.cardHeader}
+                onClick={() => showPopUp(project.id)}
+            >
+                {project.name}
+            </h3>
         </div>
         <PopUp
             id={project.id}
@@ -86,6 +90,7 @@ const createTags = ProjectList.map((project: ProjectType, index: number) => (
             source={project.source}
             description={project.description}
             picture={project.picture}
+            liveLink={project.liveLink}
         />
     </div>
 ));
