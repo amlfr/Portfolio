@@ -25,7 +25,7 @@
     inset: 0 0 0 190px;
 
     @include tablet {
-        inset: 0 0 0 0px;
+        inset: 0;
     }
 }
 
@@ -36,6 +36,10 @@
     @include tablet {
         font-size: 2.75rem;
     }
+
+    @include mobile {
+        font-size: 1.5rem;
+    }
 }
 
 .text {
@@ -44,6 +48,11 @@
 
     @include tablet {
         font-size: 2rem;
+    }
+
+    @include mobile {
+        font-size: 1.3rem;
+        margin-top: 10px;
     }
 }
 
@@ -66,6 +75,12 @@
         height: 300px;
         inset: 55px 0 0 0;
     }
+
+    @include mobile {
+        width: 175px;
+        height: 175px;
+        inset: -5px 0 0 0;
+    }
 }
 
 .photo {
@@ -80,6 +95,11 @@
         width: 300px;
         height: 300px;
     }
+
+    @include mobile {
+        width: 175px;
+        height: 175px;
+    }
 }
 
 .scrollWrapper {
@@ -93,6 +113,10 @@
     @include tablet {
         inset: 50px 0 0 310px;
     }
+
+    @include mobile {
+        inset: 60px 0 0 120px;
+    }
 }
 
 .scrollText {
@@ -104,6 +128,10 @@
     @include tablet {
         font-size: 1.35rem;
         width: 75px;
+    }
+
+    @include mobile {
+        font-size: 1rem;
     }
 }
 

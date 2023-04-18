@@ -2,6 +2,7 @@ import styles from "./Social.module.scss";
 import Image from "next/image";
 import githubSvg from "../../public/svg/github-mark.svg";
 import linkedinSvg from "../../public/svg/linkedin-svgrepo-com.svg";
+import mailSvg from "../../public/svg/mail-svgrepo-com.svg";
 
 const Social = () => {
     return (
@@ -17,6 +18,13 @@ const Social = () => {
                 <Image
                     src={linkedinSvg}
                     alt="linkedin logo with link"
+                    className={styles.link}
+                />
+            </a>
+            <a href="mailto: amartinez.lalenec@gmail.com">
+                <Image
+                    src={mailSvg}
+                    alt="github logo with link"
                     className={styles.link}
                 />
             </a>

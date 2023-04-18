@@ -23,6 +23,20 @@
             filter: invert(100%);
         }
     }
+
+    @include mobile {
+        border-radius: 15px;
+        height: 50px;
+        width: 175px;
+
+        &:active {
+            transition-duration: 0.3s;
+            background-color: var(--color-primary);
+            box-shadow: 0 0 10px white;
+            border: 2px solid black;
+            color: black;
+        }
+    }
 }
 
 .link {
@@ -39,6 +53,11 @@
     text-align: center;
     line-height: 65px;
     cursor: pointer;
+
+    @include mobile {
+        font-size: 1.75rem;
+        line-height: 50px;
+    }
 }
 
 @keyframes AppearIn {

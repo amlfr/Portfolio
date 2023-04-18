@@ -23,7 +23,7 @@ const Page: NextPageWithLayout = () => {
                     property="og:description"
                     content="Je suis un développeur web à la recherche d'une alternance de 2 ans orienté front-end et particulièrement React, mais intéresser par le stack dans son entièreté."
                 />
-                <meta property="og:url" content="TODO" />
+                <meta property="og:url" content="https://amlfr.vercel.app/" />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1"

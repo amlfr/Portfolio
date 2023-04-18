@@ -26,12 +26,11 @@ const About = () => {
             <div className={styles.bio}>
                 <h2 className={styles.header}>A propos</h2>
                 <p className={styles.text}>
-                    Je suis en cours de réorientation dans le domaine du
-                    développement et j&#39;ai récemment complété une formation
-                    bac+2 de développeur web. Je suis désormais à la recherche
-                    d&#39;une entreprise pour commencer un contrat
-                    d&#39;alternance de 2 ans pour me spécialiser dans le
-                    front-end et peut être explorer le stack dans son entièreté.
+                    J&#39;ai récemment obtenu un bac+2 développeur web chez
+                    OpenClassrooms. Je suis désormais à la recherche d&#39;une
+                    entreprise pour commencer un contrat d&#39;alternance de 2
+                    ans pour me spécialiser dans le front-end et peut être
+                    explorer le stack dans son entièreté.
                 </p>
                 <p className={styles.text}>
                     Grace à une bonne maîtrise de l&#39;outil informatique et un

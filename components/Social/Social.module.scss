@@ -6,6 +6,10 @@
     inset: 50% 0 0 3%;
 
     width: 50px;
+
+    @include mobile {
+        inset: 45% 0 0 4%;
+    }
 }
 
 .link {
@@ -22,6 +26,16 @@
         transition: all 0.3s;
         filter: invert(100);
         transform: scale(1.4);
-        /* border: 1px solid black; */
+    }
+
+    @include mobile {
+        height: 40px;
+        width: 40px;
+
+        &:active {
+            transition: all 0.3s;
+            filter: invert(100);
+            transform: scale(1.4);
+        }
     }
 }

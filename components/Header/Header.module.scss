@@ -12,6 +12,17 @@
     }
 }
 
+.logo {
+    display: none;
+
+    @include mobile {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin-left: 1rem;
+    }
+}
+
 .header {
     font-size: 4rem;
     margin-left: 12rem;
@@ -23,6 +34,10 @@
         font-size: 3rem;
         margin-left: 5rem;
     }
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .list {
@@ -31,6 +46,10 @@
 
     @include tablet {
         margin-right: 5rem;
+    }
+
+    @include mobile {
+        margin-right: 1rem;
     }
 }
 
@@ -57,6 +76,20 @@
         line-height: 50px;
         margin-left: 15px;
     }
+
+    @include mobile {
+        font-size: 1.2rem;
+        width: 85px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 10px;
+        padding: 0 5px;
+
+        &:active {
+            transition-duration: 0.3s;
+            filter: invert(100%);
+        }
+    }
 }
 
 .link {
@@ -66,6 +99,9 @@
     animation-name: AppearIn, slideFromTop;
     animation-duration: 500ms, 500ms;
     animation-timing-function: linear, ease-out;
+
+    @include mobile {
+    }
 }
 
 @keyframes slideFromTop {

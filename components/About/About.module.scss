@@ -21,10 +21,14 @@
 
     @include tablet {
         width: 60vw;
-        /* bottom: 10%;
-        position: relative; */
+        bottom: 10%;
+        position: relative;
         text-align: center;
-        /* margin-top: 0; */
+    }
+
+    @include mobile {
+        margin: 0;
+        bottom: 5%;
     }
 }
 
@@ -50,6 +54,11 @@
             height: 2px;
             top: 40px;
         }
+
+        @include mobile {
+            height: 1px;
+            top: 30px;
+        }
     }
 
     @include tablet {
@@ -57,13 +66,25 @@
         text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
             1px 1px 0 black, 0 0 2px white;
     }
+
+    @include mobile {
+        font-size: 1.3rem;
+        margin: 5px;
+    }
 }
 
 .skill {
     margin-top: -240px;
+
     @include tablet {
         text-align: center;
         margin-top: 0;
+        bottom: 7%;
+        position: relative;
+    }
+
+    @include mobile {
+        bottom: 5%;
     }
 }
 
@@ -77,6 +98,10 @@
         font-size: 1.2rem;
         text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
             1px 1px 0 black, 0 0 2px white;
+    }
+
+    @include mobile {
+        font-size: 0.9rem;
     }
 }
 
@@ -92,6 +117,13 @@
     @include tablet {
         gap: 35px;
         width: 70vw;
+        left: 50px;
+    }
+
+    @include mobile {
+        left: 60px;
+        gap: 15px 20px;
+        width: 75%;
     }
 }
 
@@ -104,6 +136,7 @@
 
     @include tablet {
         box-shadow: 0 0 2px white;
+        padding: 0.3rem 0.7rem;
     }
 }
 
@@ -114,6 +147,10 @@
         1px 1px 0 white, 0 0 3px black;
 
     @include tablet {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    @include mobile {
+        font-size: 1.1rem;
     }
 }

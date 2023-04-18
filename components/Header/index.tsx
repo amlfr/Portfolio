@@ -1,8 +1,11 @@
 import styles from "./Header.module.scss";
+import Image from "next/image";
+import logo from "../../public/favicon.ico";
 
 const Header = () => {
     return (
         <header className={styles.container}>
+            <Image src={logo} alt="logo du site" className={styles.logo} />
             <p className={styles.header}>AMLFR</p>
             <nav>
                 <ul className={styles.list}>
