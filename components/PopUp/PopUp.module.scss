@@ -27,24 +27,59 @@
     justify-content: center;
     align-items: center;
     border: 1px solid rgb(0, 0, 0);
+
+    @include tablet {
+        width: 90vw;
+        height: 57vh;
+    }
+
+    @include mobile {
+        width: 92vw;
+        height: auto;
+        padding: 1rem 0;
+        border-radius: 10px;
+    }
 }
 
 .screenshot {
     width: 960px;
     height: 540px;
     border: 1px solid black;
+
+    @include tablet {
+        width: 684px;
+        height: 385px;
+    }
+
+    @include mobile {
+        width: 320px;
+        height: 180px;
+    }
 }
 
 .text {
     font-size: 2rem;
     color: black;
     margin: 0.5rem 3rem 2rem;
+
+    @include tablet {
+        font-size: 1.5rem;
+    }
+
+    @include mobile {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
 }
 
 .linkWrapper {
     display: flex;
     flex-direction: row;
     gap: 200px;
+
+    @include mobile {
+        gap: 30px;
+    }
 }
 
 .link {
@@ -58,5 +93,17 @@
     &:hover {
         transform: scale(1.05);
         transition: 0.2s;
+    }
+
+    @include tablet {
+        &:active {
+            transform: scale(1.05);
+            transition: 0.2s;
+        }
+    }
+
+    @include mobile {
+        font-size: 1.4rem;
+        border-radius: 15px;
     }
 }
