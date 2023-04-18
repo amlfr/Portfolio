@@ -6,7 +6,7 @@ import Button from "../Button/index";
 
 const Home = () => {
     return (
-        <section className={styles.section}>
+        <section className={styles.section} id="home">
             <div className={styles.textWrapper}>
                 <h1 className={styles.header}>
                     ANTONY <br /> MARTINEZ--LALENEC

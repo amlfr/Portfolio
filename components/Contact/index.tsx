@@ -31,7 +31,7 @@ const Contact = () => {
         alert(`${result.response}`);
     };
     return (
-        <section className={styles.section}>
+        <section className={styles.section} id="contact">
             <div className={styles.wrapper}>
                 <h2 className={styles.header}>Contact</h2>
                 <p className={styles.text}>

@@ -20,7 +20,7 @@ const Header = () => {
                         </a>
                     </li>
                     <li className={styles.item}>
-                        <a href="#" className={styles.link}>
+                        <a href="#contact" className={styles.link}>
                             Contact
                         </a>
                     </li>

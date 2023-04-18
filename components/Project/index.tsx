@@ -39,7 +39,7 @@ const ProjectList: Array<ProjectType> = [
         id: "hot",
         name: "Hot takes",
         description:
-            "Site de partage de sauces permettant une inscription et le like ou dislike des sauces d'autres utilisateurs",
+            "Site de partage de sauces permettant une inscription et le like ou dislike des sauces d'autres utilisateurs, backend réalisé avec express et mongoDB",
         source: "https://github.com/amlfr/P6-Hot_takes",
         picture: [
             "/images/hottakes_screenshot.png",
