@@ -24,18 +24,15 @@ const securityHeaders = [
     },
 ];
 
-module.exports = {
+const nextConfig = {
     async headers() {
         return [
             {
-                source: "/",
+                source: "/:path*",
                 headers: securityHeaders,
             },
         ];
     },
-};
-
-const nextConfig = {
     reactStrictMode: true,
 
     //Sets up sass to use variables in every files
