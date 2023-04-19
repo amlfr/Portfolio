@@ -19,6 +19,7 @@ const Home = () => {
                     src={portfolioPhoto}
                     alt="Photo d'Antony Martinez--Lalenec"
                     className={styles.photo}
+                    priority={true}
                 />
             </div>
             <div className={styles.scrollWrapper}>
