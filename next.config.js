@@ -5,7 +5,7 @@ const ContentSecurityPolicy = `
   default-src 'self';
   script-src 'self';
   child-src https://amlfr.vercel.app/;
-  style-src 'self' 'unsafe-hashes' 'sha256-zlqnbDt84zf1iSefLU/ImC54isoprH/MRiVZGskwexk=';
+  style-src 'self' 'unsafe-hashes' 'sha256-zlqnbDt84zf1iSefLU/ImC54isoprH/MRiVZGskwexk=' 'sha256-SCgdr9HUl1M9X489YSrBvf9titHEkzcIz7RIxqvi0Io=';
   font-src 'self';  
 `;
 
