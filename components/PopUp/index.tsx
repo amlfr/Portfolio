@@ -27,7 +27,6 @@ const PopUp = (props: propsType) => {
                     height={1080}
                     alt={`Prise d'écran du projet ${props.name}`}
                     className={styles.screenshot}
-                    loading="eager"
                 />
                 <p className={styles.text}>{props.description}</p>
                 <div className={styles.linkWrapper}>
