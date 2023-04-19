@@ -6,7 +6,6 @@ const Header = () => {
     return (
         <header className={styles.container}>
             <Image src={logo} alt="logo du site" className={styles.logo} />
-            <p className={styles.header}>AMLFR</p>
             <nav>
                 <ul className={styles.list}>
                     <li className={styles.item}>
