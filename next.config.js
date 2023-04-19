@@ -2,7 +2,7 @@
 const path = require("path");
 
 const ContentSecurityPolicy = `
-  default-src 'self';
+  default-src 'self' 'https://vitals.vercel-insights.com/v1/vitals' b;
   script-src 'self';
   child-src https://amlfr.vercel.app/;
   style-src 'self' 'unsafe-hashes' 'sha256-zlqnbDt84zf1iSefLU/ImC54isoprH/MRiVZGskwexk=' 'sha256-SCgdr9HUl1M9X489YSrBvf9titHEkzcIz7RIxqvi0Io=';
