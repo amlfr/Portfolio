@@ -5,11 +5,14 @@ import logo from "../../public/favicon.ico";
 const Header = () => {
     return (
         <header className={styles.container}>
-            <Image src={logo} alt="logo du site" className={styles.logo} />
+            <a href="#home">
+                <Image src={logo} alt="logo du site" className={styles.logo} />
+            </a>
+
             <nav>
                 <ul className={styles.list}>
                     <li className={styles.item}>
-                        <a href="#home" className={styles.link}>
+                        <a href="#about" className={styles.link}>
                             A propos
                         </a>
                     </li>
