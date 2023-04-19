@@ -4,8 +4,8 @@ const path = require("path");
 const ContentSecurityPolicy = `
   default-src 'self';
   script-src 'self';
-  child-src example.com;
-  style-src 'self' example.com;
+  child-src https://amlfr.vercel.app/;
+  style-src 'self' https://amlfr.vercel.app/;
   font-src 'self';  
 `;
 
