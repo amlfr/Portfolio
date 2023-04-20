@@ -8,7 +8,6 @@ const Header = () => {
             <a href="#home">
                 <Image src={logo} alt="logo du site" className={styles.logo} />
             </a>
-
             <nav>
                 <ul className={styles.list}>
                     <li className={styles.item}>

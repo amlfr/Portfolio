@@ -19,8 +19,8 @@ const ProjectList: Array<ProjectType> = [
         description: "Site vitrine réalisé avec next.js et typescript",
         source: "https://github.com/amlfr/Portfolio",
         picture: [
-            "/images/portfolio_screenshot.png",
-            "/images/portfolio_screenshot2.png",
+            "/images/portfolio_screenshot.webp",
+            "/images/portfolio_screenshot2.webp",
         ],
     },
     {
@@ -31,8 +31,8 @@ const ProjectList: Array<ProjectType> = [
         source: "https://github.com/amlfr/P7_kasa",
         liveLink: "https://p7-kasa-ten.vercel.app/",
         picture: [
-            "/images/kasa_screenshot.png",
-            "/images/kasa_screenshot2.png",
+            "/images/kasa_screenshot.webp",
+            "/images/kasa_screenshot2.webp",
         ],
     },
     {
@@ -42,8 +42,8 @@ const ProjectList: Array<ProjectType> = [
             "Site de partage de sauces permettant une inscription et le like ou dislike des sauces d'autres utilisateurs, backend réalisé avec express et mongoDB",
         source: "https://github.com/amlfr/P6-Hot_takes",
         picture: [
-            "/images/hottakes_screenshot.png",
-            "/images/hottakes_screenshot2.png",
+            "/images/hottakes_screenshot.webp",
+            "/images/hottakes_screenshot2.webp",
         ],
     },
     {
@@ -54,8 +54,8 @@ const ProjectList: Array<ProjectType> = [
         source: "https://github.com/amlfr/P3_ohmyfood",
         liveLink: "https://amlfr.github.io/P3_ohmyfood/",
         picture: [
-            "/images/ohmyfood_screenshot.png",
-            "/images/ohmyfood_screenshot2.png",
+            "/images/ohmyfood_screenshot.webp",
+            "/images/ohmyfood_screenshot2.webp",
         ],
     },
 ];

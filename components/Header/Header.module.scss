@@ -16,6 +16,12 @@
     width: 60px;
     height: 60px;
     margin-left: 6rem;
+
+    @include mobile {
+        margin-left: 1rem;
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .header {
@@ -44,7 +50,7 @@
     }
 
     @include mobile {
-        margin-right: 1rem;
+        margin-right: 0.5rem;
     }
 }
 
